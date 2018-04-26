@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #f6f6f6;
+            color: #111111;
+            font-size: 12px;
+            font-family: sans-serif;
+            position: relative;
+        }
+        .TalionNav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            background: #ffffff;
+            max-width: 650px;
+            box-sizing: border-box;
+        }
+        .TalionNav-primary{
+            display: flex;
+            /* 在子元素中用空用间距隔开 */
+            justify-content: space-between;
+        }
+        .TalionNav-primary nav.li{
+            color: #43c759;
+            font-size: 15px;
+            margin-right: 19px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Web服务 -->
+    <div class="TalionNav">
+        <header class="TalionNav">
+            <div class="TalionNav-primary">
+                <a href="/">
+                    <h1>豆瓣</h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">电影</a>
+                            <a href="/">图书</a>
+                            <a href="/">广播</a>
+                            <a href="/">小组</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
