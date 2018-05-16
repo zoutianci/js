@@ -1,0 +1,1 @@
+export const API_BASE = 'https://www.easy-mock.com/mock/5aded0f6c57e6f08ff165a75/students/start'
