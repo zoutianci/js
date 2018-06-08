@@ -20,7 +20,7 @@
                 <label for="" class="weui-label">用户名</label>
             </div>
             <div class="weui-cell__bd">
-                <input type="text" class="weui-input" placeholder="请输入用户名" />
+                <input type="text" id="nameInput" class="weui-input" placeholder="请输入用户名" />
             </div>
             <div class="weui-cell__ft">
                 <input type="radio" class="weui-check" checked="ture">
@@ -32,7 +32,7 @@
                 <label for="" class="weui-label">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
             </div>
             <div class="weui-cell__bd">
-                <input type="text" class="weui-input" placeholder="请输入密码" />
+                <input type="password" id="passwordInput" class="weui-input" placeholder="请输入密码" minlength="6" maxlength="16" />
             </div>
         </div>
     </div>
@@ -44,8 +44,56 @@
         </span>
     </label>
     <div class="weui-btn-area">
-        <a href="#" class="weui-btn weui-btn_primary">提交</a>
+        <a href="javascript:;" id="loginBtn" class="weui-btn weui-btn_primary">提交</a>
     </div>
+    <script>
+        window.onload = function () {
+            const loginBtn = document.getElementById('loginBtn');
+            //登录流程,对象化
+            const LoginForm = {
+                nameInput: document.getElementById('nameInput'),
+                passwordInput: document.getElementById('passwordInput'),
+                submit: function () {
+                    if (!this.checkUsername()) {
+                        return false;
+                    }
+                    if (!this.checkPassword()) {
+                        return false;
+                    }
+                    return true;
+                },
+                checkPassword: function () {
+                    const strPassword = this.passwordInput.value.trim();//trim() -> API  清楚前后的空格
+                    if (!strPassword) {
+                        this.passwordInput.focus();
+                        return false;
+                    }
+                    const strLen = strPassword.length;
+                    if (strLen < 6 || strLen > 16) {
+                        alert('密码长度需大于6位,小于16位');
+                        return false;
+                    }
+                },
+                checkUsername: function () {
+                    const strUsername = this.nameInput.value.trim();
+                    if (!strUsername) {
+                        this.nameInput.focus();
+                        return false;
+                    }
+                    // alert(strUsername);
+                    return true;
+                },
+                // reset: function () {
+
+                // }
+            };
+            loginBtn.addEventListener('click', function (event) {
+                if (LoginForm.submit()) {
+                    alert('表单提交成功!');
+                };
+            }, false);
+        }
+    </script>
 </body>
 
 </html>

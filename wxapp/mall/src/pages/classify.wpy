@@ -1,0 +1,21 @@
+<style lang="less">
+
+</style>
+
+<template>
+    <view>
+
+    </view>
+</template>
+
+<script>
+// wepy 在本地的node_modules 下,所以可直接引入
+import wepy from 'wepy'
+// 单页面组件
+export default class Classify extends wepy.page {
+    // 不是json, 而是es6 class
+    data = {
+        
+    }
+}
+</script>

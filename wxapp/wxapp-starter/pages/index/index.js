@@ -21,12 +21,11 @@ Page({
         this.setData({
           isLoading: false,
           entities: res.data.data.articles,
-          currentPage:1
+          currentPage: 1
         })
-      }
-    })
+      }})
   },
-  onLoad() {
+  onLoad () {
     wx.request({
       url: API_BASE,
       success: (res) => {
@@ -38,10 +37,9 @@ Page({
           totalPages: res.data.data.totalPages,
           total: res.data.data.total
         })
-      }
-    })
+      }})
   },
-  onReachBottom() {
+  onReachBottom () {
     // console.log('到底了');
     // 请求下一页的数据
     // 最后一页
@@ -49,7 +47,7 @@ Page({
     // 解构json
     let { currentPage, totalPages, isLoading } = this.data
     console.log(currentPage, totalPages, isLoading);
-    if (currentPage >= totalPages || isLoading) {
+    if ( currentPage >= totalPages || isLoading) {
       return;
     }
     currentPage += 1
