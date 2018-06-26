@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    
+    "pages/logs/logs",
+    "pages/shoppingHistory/shoppingHistory",
+    "pages/shangShi/shangShi"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "星巴克用星说",
+    "navigationBarTextStyle": "black"
+  }
+}

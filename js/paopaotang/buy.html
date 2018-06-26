@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 470px;
+            height: 300px;
+            background-color: rgb(131, 128, 128);
+            padding: 0 0 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        </br>
+        <div class="topBar">
+            选择颜色:&nbsp;
+            <select name="" id="sel">
+                <option value="红色">红色</option>
+                <option value="蓝色">蓝色</option>
+            </select>
+            &nbsp;输入购买数量:
+            <input type="text" id="inp"></br></br></br></br>
+        </div>
+        <div class="show">
+            您选择了颜色:</br>
+            <span id="col">red</span></br></br>
+            您输入了数量:</br>
+            <span id="num"></span></br>
+        </div></br></br>
+        <button id="btn" disabled>请输入正确的数量</button>
+    </div>
+    <script>
+        window.onload = function () {
+            var goods = {red: 4, blue: 6};
+            // function $(id) {
+            //     var id = document.getElementById(id);
+            // };
+            
+            // $('inp');
+            // $('col')
+            // $('num');
+            // $('btn');
+            console.log(sel);
+            sel.onchange = function () {                
+                if (sel.value == '红色') {
+                    col.innerHTML = "red";
+                } else {
+                    col.innerHTML = "blue";
+                }
+            }            
+            inp.oninput = function () {
+                num.innerHTML = inp.value;
+                if (inp.value == '') {
+                    btn.innerHTML = '请输入正确的数量';
+                    btn.disabled = true;
+                } else if ((sel.value == '红色' && parseInt(inp.value) <= parseInt(goods.red)) || (sel.value == '蓝色' && parseInt(inp.value) <= parseInt(goods.blue))) {
+                    btn.innerHTML = '加入购物车';
+                    btn.disabled = false;
+                } else {
+                    btn.innerHTML = '库存不足';
+                    btn.disabled = true;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

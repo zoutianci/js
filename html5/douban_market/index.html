@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div id="db-global-nav" class="global-nav">
+        <!-- 男主外margin height,女主内 padding -->
+        <div class="bd">
+            <div class="top-nav-info">
+                <a href="https://www.douban.com/accounts/login?source=main" class="nav-login" rel="nofollow">登录</a>
+                <a href="https://www.douban.com/accounts/register?source=main" class="nav-register" rel="nofollow">注册</a>
+            </div>
+            <div class="top-nav-doubanapp more-active">
+                <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+                <div id="top-nav-appintro" class="more-items">
+                    <p class="appintro-title">豆瓣</p>
+                    <p class="qrcode">扫码直接下载</p>
+                    <div class="download">
+                        <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                        <span>·</span>
+                        <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+                    </div>
+                    <div id="doubanapp-tip" style="display: none;">
+                        <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 5.0 全新发布</a>
+                        <a href="javascript: void 0;" class="tip-close">×</a>
+                    </div>
+                </div>
+            </div>
+            <div class="global-nav-items">
+                <ul>
+                    <li class="on">
+                        <a href="#">豆瓣</a>
+                    </li>
+                    <li>
+                        <a href="#">读书</a>
+                    </li>
+                    <li>
+                        <a href="#">电影</a>
+                    </li>
+                    <li>
+                        <a href="#">音乐</a>
+                    </li>
+                    <li>
+                        <a href="#">同城</a>
+                    </li>
+                    <li>
+                        <a href="#">小组</a>
+                    </li>
+                    <li>
+                        <a href="#">阅读</a>
+                    </li>
+                    <li>
+                        <a href="#">FM</a>
+                    </li>
+                    <li>
+                        <a href="#">时间</a>
+                    </li>
+                    <li>
+                        <a href="#">市集</a>
+                    </li>
+                    <li>
+                        <a href="#" class="bn-more">
+                            <span>更多</span>
+                        </a>
+                        <div class="more-items">
+                            <table cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="" target="_blank" data-moreurl-dict="{" from ":"top-nav-click-ypy ","uid ":"0 "}">豆瓣摄影</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div id="market-main" style="min-height: 572px;">
+        <header id="market-header" class="market-global-header">
+            <div class="header-inner">
+                <div class="logo">
+                    <a class="market-logo" href="/">豆瓣市集</a>
+                </div>
+                <div class="market-user">
+                    <div class="user-people">
+                        <div class="user-pic" id="header-user-pic">
+                            <img src="https://img3.doubanio.com/icon/user_large.jpg">
+                            <span>个人中心</span>
+                        </div>
+                        <ul class="nav-list" style="display: none;">
+                            <li class="nav-item">
+                                <a href="/people">市集／纸书订单</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/people/coupons">我的优惠券</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/people/address">收货地址管理</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="homepage" id="homepage">
+            <!-- bannder -->
+            <div class="banner-wrapper">
+                <div class="slide-box" id="slide-top">
+                    <div class="slide" data-thumbnail-enabled="false" data-image-height="580" data-image-width="1440" style="position: relative; z-index: 1; height: 412.444px; width: 1024px;">
+                        <div class="slide-inner" style="position: absolute; z-index: 1; width: 6144px; height: 412.444px; top: 0px; left: -3072px;">
+                            <div class="slide-item" data-thumbnail="" style="height: 412.444px; width: 1024px;">
+                                <a href="https://market.douban.com/campaign/collection" target="_blank">
+                                    <img src="https://img3.doubanio.com/img/files/file-1525686721-0.jpg" alt="None">
+                                </a>
+                            </div>
+                            <div class="slide-item" data-thumbnail="" style="height: 412.444px; width: 1024px;">
+                                <a href="https://market.douban.com/campaign/backpack-3m" target="_blank">
+                                    <img src="https://img3.doubanio.com/img/files/file-1524881486-1.jpg" alt="None">
+                                </a>
+                            </div>
+                            <div class="slide-item" data-thumbnail="" style="height: 412.444px; width: 1024px;">
+                                <a href="https://market.douban.com/campaign/notebook-basic" target="_blank">
+                                    <img src="https://img3.doubanio.com/img/files/file-1524199263-1.jpg" alt="None">
+                                </a>
+                            </div>
+                            <div class="slide-item" data-thumbnail="" style="height: 412.444px; width: 1024px;">
+                                <a href="https://market.douban.com/campaign/coffee" target="_blank">
+                                    <img src="https://img3.doubanio.com/img/files/file-1524122635-1.jpg" alt="None">
+                                </a>
+                            </div>
+                            <div class="slide-item" data-thumbnail="" style="height: 412.444px; width: 1024px;">
+                                <a href="https://market.douban.com/campaign/phonecase" target="_blank">
+                                    <img src="https://img3.doubanio.com/img/files/file-1519640597-2.jpg" alt="None">
+                                </a>
+                            </div>
+                            <div class="slide-item" data-thumbnail="" style="height: 412.444px; width: 1024px;">
+                                <a href="https://m.douban.com/time/product/book_time/?dt_time_source=douban-doubanmarket" target="_blank">
+                                    <img src="https://img3.doubanio.com/img/files/file-1524729256-1.jpg" alt="None">
+                                </a>
+                            </div>
+                        </div>
+                        <a class="slide-button-next"></a>
+                        <a class="slide-button-prev"></a>
+                        <ul class="slide-paginator">
+                            <li class="slide-paginator-item " data-index="0">●</li>
+                            <li class="slide-paginator-item " data-index="1">●</li>
+                            <li class="slide-paginator-item " data-index="2">●</li>
+                            <li class="slide-paginator-item active" data-index="3">●</li>
+                            <li class="slide-paginator-item " data-index="4">●</li>
+                            <li class="slide-paginator-item " data-index="5">●</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="homepage-wrapper">
+                <div class="product-card-list">
+                    <a class="product-card rtl" href="https://market.douban.com/product/104293/?index=1&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1525683631-0.jpg" alt="豆瓣收藏夹">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣收藏夹</h5>
+                            <p class="product-desc">珍藏那些不舍丢弃的照片和票根，给你的回忆一处安放之所。</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥99</span>
+
+                                <em class="product-tag" style="border-color: #f05f50; color: #f05f50;">
+                                    热卖
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card ltr" href="https://market.douban.com/product/140149/?index=2&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1524482877-0.png" alt="豆瓣「三刻」双肩包">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣「三刻」双肩包</h5>
+                            <p class="product-desc">双肩斜挎，瞬间变形，一包两用，双倍扩容。</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥499</span>
+
+                                <em class="product-tag" style="border-color: #F2BE40; color: #F2BE40;">
+                                    新品
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card rtl" href="https://market.douban.com/product/150563/?index=3&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1524191350-0.jpg" alt="豆瓣线装笔记本">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣线装笔记本</h5>
+                            <p class="product-desc">简单凝练，轻薄便携，书写流畅，不洇不透</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥18</span>
+
+                                <em class="product-tag" style="border-color: #F2BE40; color: #F2BE40;">
+                                    新品
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card ltr" href="https://market.douban.com/product/150546/?index=4&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1523413054-0.jpg" alt="豆瓣精品挂耳咖啡-甜橙庄园系列">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣精品挂耳咖啡-甜橙庄园系列</h5>
+                            <p class="product-desc">甄选COE获奖精品咖啡。花香浓郁，果香四溢，回味甘甜。</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥56</span>
+
+                                <em class="product-tag" style="border-color: #F2BE40; color: #F2BE40;">
+                                    新品
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card rtl" href="https://market.douban.com/product/136686/?index=5&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1518508006-0.jpg" alt="豆瓣·电影畅想系列手机壳">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣·电影畅想系列手机壳</h5>
+                            <p class="product-desc">以经典电影为图案灵感，自然元素塑造独特造型，高质量双重材质，保护你的手机。</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥48</span>
+
+                                <em class="product-tag" style="border-color: #F2BE40; color: #F2BE40;">
+                                    新品
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card ltr" href="https://market.douban.com/product/119843/?index=6&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1513071502-0.jpg" alt="豆瓣笔记本·遇见你系列">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣笔记本·遇见你系列</h5>
+                            <p class="product-desc">方格内页，落笔顺畅，不洇不透。愿你在书写中遇见自我。</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥48</span>
+
+                                <em class="product-tag" style="border-color: #f05f50; color: #f05f50;">
+                                    热卖
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card rtl" href="https://market.douban.com/product/136685/?index=7&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1516599034-0.jpg" alt="豆瓣心茶">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣心茶</h5>
+                            <p class="product-desc">严选优质鲜花与茶叶，精心窨制花茶。万千心意，尽在心茶。</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥68</span>
+
+                                <em class="product-tag" style="border-color: #f05f50; color: #f05f50;">
+                                    热卖
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card ltr" href="https://market.douban.com/product/111456/?index=8&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1513071502-2.jpg" alt="豆瓣帆布包·早餐系列">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣帆布包·早餐系列</h5>
+                            <p class="product-desc">简约版型 + 多层收纳 + 食欲满满的早餐图案 = 你不可或缺的搭配好物</p>
+                            <div class="product-prices">
+
+                                <span class="sale-price">¥149</span>
+
+                                <em class="product-tag" style="border-color: #f05f50; color: #f05f50;">
+                                    热卖
+                                </em>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="mui-button l red">立即购买</button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card rtl" href="https://market.douban.com/product/121849/?index=9&amp;r=sku" target="_blank">
+                        <div class="product-photo">
+                            <img src="https://img3.doubanio.com/img/files/file-1512011430-0.jpg" alt="豆瓣电影日历2018">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-title">豆瓣电影日历2018</h5>
+                            <p class="product-desc">全年高分片单，流畅翻页设计，让豆瓣陪你一起感受时光。</p>
+                            <div class="product-buttons">
+                                <button class="mui-button l disabled">已售罄</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- group -->
+            <div class="homepage-wrapper">
+                <div class="group">
+                    <div class="group-hd">
+                        <a href="//douban.com/group/588598" class="more" target="_blank">
+                            查看更多 &gt;
+                        </a>
+                        <h4>市集小组</h4>
+                    </div>
+                    <ul class="group-topics">
+                        <li class="group-topic-item">
+                            <em class="topic-update-time">
+                                04-26
+                            </em>
+                            <span class="topic-comment-amount">
+                                <em>9</em>
+                            </span>
+                            <a href="//douban.com/group/topic/115839702/" class="topic-title" target="_blank">
+                                【强势上新发券（活动已结束）】豆瓣线装笔记本全新上市┃珍惜 你随手写下的每分思绪
+
+                            </a>
+                        </li>
+                        <li class="group-topic-item">
+                            <em class="topic-update-time">
+                                04-21
+                            </em>
+                            <span class="topic-comment-amount">
+                                <em>26</em>
+                            </span>
+                            <a href="//douban.com/group/topic/115410225/" class="topic-title" target="_blank">
+                                【补货消息】豆瓣·电影畅想系列手机壳补货啦~
+                            </a>
+                        </li>
+                        <li class="group-topic-item">
+                            <em class="topic-update-time">
+                                05-01
+                            </em>
+                            <span class="topic-comment-amount">
+                                <em>10</em>
+                            </span>
+                            <a href="//douban.com/group/topic/116116788/" class="topic-title" target="_blank">
+                                【晒单邀请】参与豆瓣咖啡晒单活动，得即将上市的新品搪瓷杯
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- topics -->
+            <div class="homepage-wrapper">
+                <div class="topics">
+                    <div class="topics-hd">
+                        <h4>热门活动 </h4>
+                    </div>
+                    <ul class="topics-list">
+                        <li>
+                            <a href="https://www.douban.com/gallery/topic/3135/?index=1&amp;r=topic" class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1524481845-1.png)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #男生的包里有什么#
+                                    </p>
+                                    <p class="topic-desc">
+                                        以及……看看豆瓣男员工的包里都有什么！
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.douban.com/people/119347429/status/2122634564/?index=2&amp;r=topic" class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1520332486-0.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #你是茶派还是酒派#
+                                    </p>
+                                    <p class="topic-desc">
+                                        送出50份壕礼：茶和酒你更青睐哪个呢？
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://shiji.douban.com/yard/playground/calendar?index=3&amp;r=topic" class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1517992478-0.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #生成你的2018专属电影#
+                                    </p>
+                                    <p class="topic-desc">
+                                        点击输入对你有意义的日子，看看那天属于你的电影是哪一部吧！
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://douc.cc/2eVvHs?index=4&amp;r=topic" class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1515387415-0.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #晒出你的2018豆瓣日历#
+                                    </p>
+                                    <p class="topic-desc">
+                                        它是否已和你共同开启新年的电影旅程了呢？
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.douban.com/people/119347429/status/2075439347/?index=5&amp;r=topic" class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1513591841-0.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #光阴带走的，电影留给你#
+                                    </p>
+                                    <p class="topic-desc">
+                                        年末将至，豆瓣为你捎来一封手写信
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.douban.com/gallery/topic/%E6%88%91%E7%9A%84%E8%B1%86%E7%93%A3%E6%94%B6%E8%97%8F%E5%A4%B9%E9%87%8C%E6%9C%89%E4%BB%80%E4%B9%88/?index=6&amp;r=topic"
+                                class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1512976575-3.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #我的豆瓣收藏夹里有什么#
+                                    </p>
+                                    <p class="topic-desc">
+                                        晒出你的豆瓣收藏夹，让我们看看你走过的世界吧。
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.douban.com/update/topic/%E5%81%9C%E4%B8%8D%E4%B8%8B%E7%9A%84%E6%94%B6%E8%97%8F%E7%99%96?index=7&amp;r=topic"
+                                class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1512976575-1.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #停不下的收藏癖#
+                                    </p>
+                                    <p class="topic-desc">
+                                        留存的东西不只是回忆，更是时代变迁的痕迹。
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.douban.com/update/topic/%E5%A6%82%E6%9E%9C%E8%B1%86%E7%93%A3%E5%87%BA%E6%96%B0%E5%91%A8%E8%BE%B9?index=8&amp;r=topic"
+                                class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1512976575-2.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #如果豆瓣出新周边#
+                                    </p>
+                                    <p class="topic-desc">
+                                        一起来分享关于豆瓣周边的脑洞和创意吧！
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.douban.com/update/topic/%E8%B1%86%E7%93%A3%E6%97%A5%E5%8E%86?index=9&amp;r=topic" class="topic-item">
+                                <div class="topic-photo" style="background-image:url(https://img3.doubanio.com/img/files/file-1512976575-0.jpg)"></div>
+                                <div class="topic-info">
+                                    <p class="topic-title">
+                                        #晒晒你的2017豆瓣日历#
+                                    </p>
+                                    <p class="topic-desc">
+                                        有没有那么一部电影，打动你的心~
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="info-footer">
+            <a class="item" id="openMarketInfo">
+                <i class="mui-icon warning-triangle"></i>
+                <span>购物说明</span>
+            </a>
+            <a class="item" target="_blank" href="https://www.douban.com/doumail/write?to=119347429">
+                <i class="mui-icon pencil"></i>
+                <span>意见反馈</span>
+            </a>
+            <a class="item" id="openMarketContact">
+                <i class="mui-icon briefcase"></i>
+                <span>联系我们</span>
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>

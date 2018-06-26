@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+    <div id="redDIv" class="redDiv" style="border:1px solid #e0e0e0; width:200px; height:30px;"></div>
+    <input type="button" class="red" value="有redDiv类？" />
+    <input type="button" class="blue" value="有blueDiv类？" />
+    <script>
+        // $(document).ready(function () {
+        //     $(".red").click(function () {
+        //         if ($("div").is(".redDiv")) {
+        //             alert("含有redDiv类");
+        //         }
+        //     });
+
+        //     $(".blue").click(function () {
+        //         if (!($("div").hasClass("blueDiv"))) {
+        //             alert("不含有blueDiv类");
+        //         }
+        //     });
+
+        // });
+        // var a = document.getElementById('redDIv');
+        // a.prototype = {
+        //     hasClass: function (e) {
+        //         var t = " " + e + " ", n = 0, r = this.length;
+        //         for (; r > n; n++)
+        //             if (1 === this[n].nodeType && (" " + this[n].className + " ").replace(W, " ").indexOf(t) >= 0)
+        //                 return !0;
+        //         return !1
+        //     }
+        // }
+
+        // console.log(a);
+        // console.log(a.hasClass('redDiv'));
+        function hasClass(ele, cls) {
+            const reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+            return reg.test(ele.className);
+        }
+        function removeClass(ele, cls) {
+
+        }
+
+    </script>
+</body>
+
+</html>

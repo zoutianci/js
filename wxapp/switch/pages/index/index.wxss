@@ -1,0 +1,44 @@
+/**index.wxss**/
+.container {
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;*/
+  width: 678rpx;
+  /* box-sizing: border-box;  */
+  align-items: center;
+}
+.container .block{
+  position: relative;
+  width: 570rpx;
+  height: 85rpx;
+  border: 1rpx solid red;
+  border-radius: 42.5rpx;
+}
+.container .Input{
+  left: 56rpx;
+  top: 150rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .Check{
+  left: 56rpx;
+  margin-top: 280rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .text{
+  top: 410rpx;
+  left: 130rpx;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  font-size: 22rpx;
+}
+.text_url{
+  color:blue;
+}

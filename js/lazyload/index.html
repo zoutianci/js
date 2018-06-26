@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>懒加载图片</title>
+</head>
+<body>
+    <!-- 网页在渲染的时候，http请求数量
+    chrome 性能最好， 同时并发的请求数十几个
+    将图片下载放到dom ready之后 将会有效的提升网页打开速度
+    占位图片    优化前-> n张图片  url不一样  http请求是n
+    优化后->图片上的http数量只有1  如果url一样,不会重复发送 -->
+    <img 
+    class="pic3"
+    src="http://static.youku.com/yk/vmanage/img/manage/video/mask.d53611efc6.png"
+    origin_src="http://img1.imgtn.bdimg.com/it/u=2342199411,1116628030&fm=27&gp=0.jpg" alt="">
+    <img 
+    class="pic1"
+    src="http://static.youku.com/yk/vmanage/img/manage/video/mask.d53611efc6.png"
+    origin_src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2845927023,1183271026&fm=27&gp=0.jpg" alt="">
+    <img 
+    class="pic2"
+    src="http://static.youku.com/yk/vmanage/img/manage/video/mask.d53611efc6.png"
+    origin_src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3552895106,2575304169&fm=27&gp=0.jpg" alt="">
+    <img 
+    class="pic4"
+    src="http://static.youku.com/yk/vmanage/img/manage/video/mask.d53611efc6.png"
+    origin_src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1890186859,358538753&fm=27&gp=0.jpg" alt="">
+
+    <script src="./lazyload.js"></script>
+    <script>
+    //优化图片下载, 将其推后
+    window.onload = function(){
+        // var imgs = document.querySelector('img')[];
+        // console.log(imgs.length);
+        const img = document.querySelector('.pic1')
+        LazyLoadImage.setSrc(img);
+        const img2 = document.querySelector('.pic2')
+        LazyLoadImage.setSrc(img2);
+        const img3 = document.querySelector('.pic3')
+        LazyLoadImage.setSrc(img3);
+        const img4 = document.querySelector('.pic4')
+        LazyLoadImage.setSrc(img4);
+        // 懒加载图片
+        // // 在页面打开之后，重新下载图片
+        // const img = document.querySelector('.pic1');
+        // // origin_src 自定义属性
+        // const url = img.getAttribute('origin_src');
+        // console.log(url);
+        // const oImg = document.createElement('img');
+        // oImg.style.display = 'none';
+        // document.body.appendChild(oImg);
+        // oImg.onload = function(){
+        //     // 幕后工作者 已经下载了图片
+        //     // url 一旦下载， 在浏览器缓存（静态）文件
+        //     img.src = url;
+        // }
+        // // 图片的下载是异步，图片有大小
+        // oImg.src = url;
+        // // img.setAttribute('src',url);
+    }  
+    </script>
+</body>
+</html>

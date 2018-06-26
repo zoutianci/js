@@ -1,0 +1,55 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+    <view class="hd">
+        <view class="hd-top">
+            <image class="hd-top_img" src="{{topImg}}"></image>
+        </view>
+        <view class="hd-bottom">
+            <scroll-view class="hd-bottom_lists" 
+            scroll-x
+            scroll-into-view="{{toView}}" scroll-with-animation="{{true}}" >
+                <view class="hd-bottom_list" wx:for="{{detail}}" wx:key="{{index}}" wx:for-item="product">
+                    <view class=" {{product.checked?'choose':'hide'}}" bindtap="choosePic" data-index="{{index}}">                    
+                        <image class="hd-bottom_listImg" src="{{product.thumb}}"> </image>
+                        <view>
+                        </view>
+                    </view>                    
+                </view>
+            </scroll-view>   
+        </view>
+    </view>
+    <view class="bt">
+        <text class="ins">选择商品</text>
+        <scroll-view class="showGoods" scroll-y="true" scroll-into-view="{{toView}}">
+            <view class="goods" wx:for="{{detail}}" wx:key="{{index}}" wx:for-item="goods" >
+                <image class="goods_pic" src="{{goods.thumb}}"></image>
+                <view class="countNum">
+                        <view class="minusIcon {{goods.addClick?'show':''}}" bindtap="minusGoods" data-index="{{index}}">-</view>
+                        <text class="goodsNum {{goods.addClick?'show':''}}"> {{goods.num}} </text> 
+                        <view class="addIcon" bindtap="addGoods" data-index="{{index}}">+</view> 
+                </view>                
+                <view class="content">
+                    <text class="goods_title">{{goods.name}}</text>
+                    <text class="goods_price">￥{{goods.price}}</text>
+                </view>
+            </view> 
+        </scroll-view>
+        <view class="accident">
+            <navigator class="a">
+                <text class="usingKnow">使用须知</text>
+            </navigator>
+            <navigator class="b">
+                <text class="protect">隐私权条款</text>
+            </navigator>
+        </view>
+    </view>
+    <view class="footer">
+        <view class="sum">
+            <text class="sums">￥ {{totalPrice}}</text>
+        </view>
+        <view class="buy">
+            <button type="" value="购买" class="buy_btn {{show?'':'hasGoods'}}" disabled="{{show}}">购买</button>
+        </view>
+    </view>
+</view>
+                                      

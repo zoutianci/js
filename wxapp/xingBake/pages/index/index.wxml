@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="xingBake">
+    <view class="top">
+        <view class="top_imgs">
+            <image class="img" src="https://raw.githubusercontent.com/zoutianci/js/master/wxapp/xingBake/images/top_image.png"></image>
+
+        </view>
+    </view>
+    <view class="md">
+        <navigator class="mdUrl" url="../shangShi/shangShi">
+            <image class="md_icon" src="https://raw.githubusercontent.com/zoutianci/js/master/wxapp/xingBake/images/indexMd_iocn.png"></image>
+            <text class="md_content">星冰粽沁田上市</text>
+        </navigator>
+    </view>
+    <view class="listTab">
+        <text class="list_title">咖啡+祝福 即刻表心意</text>
+        <scroll-view class="category-right" scroll-y="true" scroll-into-view="{{toView}}" scroll-with-animation="{{true}}">
+            <view class="cate-box" >
+                <view class="product">
+                    <navigator class="product-list" wx:for="{{detail}}" wx:key="{{index}}" wx:for-item="product" url="../detail/detail">
+                        <image src="{{product.thumb}}"/>
+                        <view class="product_name">
+                            <text>{{product.name}}</text>
+                        </view>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="bt">
+        <navigator class="shoppingHistory" url="../shoppingHistory/shoppingHistory">
+            <view class="historyUrl">
+                <image class="historyUrl_icon" src="https://raw.githubusercontent.com/zoutianci/js/master/wxapp/xingBake/images/shoppingHistory_icon.png">
+
+                </image>
+            </view>
+            <text class="bt_textContent" >购买历史</text>
+        </navigator>
+    </view>
+</view>
+

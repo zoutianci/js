@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/xuanzhuan/xuanzhuan",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="Input block">
+    <icon class="icon"></icon>
+    <input class="phoneNumber" placeholder="请输入手机号码" value="{{addText}}" bindinput="setInput" focus="{{focus}}" />
+    <view class="clear">
+      <icon type="clear" size="28" />
+    </view>
+  </view>
+  <view class="Check block">
+    <button class="Btn" type="text" bindtap="addTodo" size="mini">下一步</button>
+  </view>
+  <view class="text">
+    点击"下一步",即同意
+    <navigator url="#" class="text_url">《58到家用户协议》</navigator>
+  </view>
+</view>

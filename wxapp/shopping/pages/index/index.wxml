@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="hd">
+    <view class="showPic">
+      <image></image>
+    </view>
+    <view class="control">
+      <text>数量{{goods.num}}</text>
+      <view bindtap="goodsAdd">+</view>
+      <text>加入购物车</text>
+      <view class="iconPic"><image></image></view>
+    </view>
+    <view class="instructions">
+      <text>{{goods.current}}</text>
+      <text>{{goods.name}}}</text>
+      <text>${{goods.price}}</text>
+    </view>
+    <view class="cart"></view>
+  </view>
+  <view class="ft">
+    <view class="list">
+      <view class="goodsIns">产品详情</view>
+      <view class="goodsPar">产品参数</view>
+      <view class="afterSale">售后保障</view>
+    </view>
+    <view class="goodsInsText">
+      <text>{{goods.instructions}}</text>
+    </view>
+  </view>
+</view> -->
+<view class="main">
+  <view class="goods-box">
+    <image class="goods-thumb" src="/image/goods1.png"></image>
+    <view class="goods-operation">
+      <text class="goods-operation-num">数量{{num}}</text>
+      <text class="goods-operation-add" bindtap="addCount">+</text>
+      <text class="goods-to-cart" bindtap="addToCart">加入购物车</text>
+      <image class="goods-cart-img" src="/image/cart1.png"></image>
+    </view>
+    <image class="to-carts-icon" wx:if="{{show}}" src="{{goods.image}}"></image>
+    <view class="goods-stock">{{goods.stock}}</view>
+    <view class="goods-title">{{goods.title}}</view>
+    <view class="goods-price">{{goods.price}}</view>
+    <navigator url="../cart/cart" open-type="swithTab">
+      <view class="carts-icon {{scaleCart?'on':''}}">
+        <image src="/image/cart2.png"/>
+        <text wx:if="{{hasCarts}}" class="carts-icon-num">{{totalNum}}</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="goods-tab-box">
+    <view class="goods-tab-nav {{check?'on':''}}" data-index="0" bindtap="">商品详情</view>
+    <view class="goods-tab-nav" data-index="1">产品参数</view>
+    <view class="goods-tab-nav" data-index="2">售后保障</view>
+    <view class="goods-content">
+      <view>{{goods.detail}}</view>
+    </view>
+  </view>
+</view>

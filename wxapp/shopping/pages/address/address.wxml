@@ -1,0 +1,15 @@
+<!--pages/address/address.wxml-->
+<view class="addAddress">
+    <view class="name textInput">
+        <input type="text" placeholder="姓名" focus="{{focus}}" bindinput="setInputName"/>
+    </view>
+    <view class="tel textInput">
+        <input type="text" placeholder="电话号码"  bindinput="setInputTel"/>
+    </view>
+    <view class="detailAddress textInput">
+        <input type="text" placeholder="详细地址"  bindinput="setInputDetailAddress"/>
+    </view>
+    <view class="save">
+        <button class="save-btn" bindtap="checkSave">保存</button>
+    </view>
+</view>

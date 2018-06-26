@@ -1,0 +1,15 @@
+<!--pages/user/user.wxml-->
+<view class="user">
+        <navigator url="../address/address" class="address">地址管理</navigator>
+</view>
+<view class="showAddress" wx:if="{{hasAddress}}">
+        <view class="name textInput">
+                <text>{{lists[0].name}}</text>
+        </view>
+        <view class="tel textInput">
+                <text>{{lists[0].tel}}</text>
+        </view>
+        <view class="detailAddress textInput">
+                <text>{{lists[0].detailAddress}}</text>
+        </view>
+</view>

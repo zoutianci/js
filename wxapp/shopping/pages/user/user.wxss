@@ -1,0 +1,48 @@
+/* pages/user/user.wxss */
+.user {
+    /* position: relative; */
+    width: 750rpx;
+    height: 100%;
+}
+.address{
+    /* position: absolute; */
+    /* position: relative; */
+    width: 750rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-top: 1px solid rgb(105, 96, 96);
+    border-bottom: 1px solid rgb(105, 96, 96);
+}
+.address::after{
+    position: absolute;
+    right: 40rpx;
+    top: 20rpx;
+    content: "";
+    width: 30rpx;
+    height: 30rpx;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: rotate(45deg);
+    /* border: 1px solid #000; */
+    /* background-color: red; */
+    z-index: 100;
+}
+.showAddress{
+    margin: 0 40rpx;
+    position: relative;
+}
+.showAddress .textInput{
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+    /* line-height: 100rpx; */
+    border-bottom: 1px solid rgb(131, 123, 123);
+}
+.showAddress text{
+    width: 100%;
+    height: 100rpx;
+    font-size: 40rpx;
+}
+.hide{
+    display: none;
+}
