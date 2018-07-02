@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        height: 1200px;
+        background-color: purple;
+    }
+    .ybox {
+        height: 1200px;
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <!-- hash 的本质用于同一页面不同位置的标注 -->
+    <!-- 锚点 -->
+    <a href="" name="top"></a>
+    <div class="box"></div>
+    <a href="#top">回到顶部</a>
+    <a href="#middle">到中间去</a>
+    <a href="" name="middle"></a>
+    <div class="box ybox"></div>
+    <a href="#top">回到顶部</a>
+    <a href="#middle">到中间去</a>
+    <script>
+    window.addEventListener('hashchange', dohashchange, false);
+    function dohashchange(event) {
+        console.log(window.location)
+        let id = window.location.hash
+        console.log(id)
+        if (id) {
+            id = id.replace('#', '')
+        }
+        console.log(id)
+        
+    }
+    // var title = node.find('title').text()
+    </script>
+</body>
+</html>
