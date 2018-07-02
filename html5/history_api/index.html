@@ -33,7 +33,7 @@
         //                 window.event.returnValue = false;
         //     }
         // })
-        $(function() {
+        (function() {
             // 只有一个页面, 本质还是多个, 每个页面, 变成一个状态, 在SPA
             // 为状态生成一个history
             // history 浏览器的历史, route路由 状态对应的数据
@@ -74,7 +74,8 @@
                     dispalyContent(event.state);
                 }
             }
-        })
+        })()
+        // function
     </script>
 </body>
 </html>
