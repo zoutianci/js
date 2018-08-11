@@ -1,0 +1,30 @@
+{
+  "name": "koa-blog",
+  "version": "1.0.0",
+  "description": "config 文件做配置\r routes 路由的定义\r middlewares 中间件   此处用来判断用户是否登录了 在去到一个路由响应之前一点点 去执行 判断是否有session值",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config-lite": "^2.1.0",
+    "ejs": "^2.6.1",
+    "koa": "^2.5.2",
+    "koa-body-parser": "^1.1.2",
+    "koa-mysql-session": "^0.0.2",
+    "koa-router": "^7.4.0",
+    "koa-session-minimal": "^3.0.4",
+    "koa-static": "^5.0.0",
+    "koa-static-cache": "^5.1.2",
+    "koa-views": "^6.1.4",
+    "markdown-it": "^8.4.2",
+    "md5": "^2.2.1",
+    "moment": "^2.22.2"
+  }
+}
